@@ -45,7 +45,6 @@
 
 .NOTES
     Author: Idan Nadato
-    Company: ELPC
     Version: 1.0
     Last Updated: [2/9/2024]
 #>

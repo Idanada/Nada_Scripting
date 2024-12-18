@@ -78,7 +78,7 @@ function Write-Log {
 # Menu display function
 function Show-Menu {
     param (
-        [string]$Title = 'Welcome to ELPC - Domain Maintenance'
+        [string]$Title = 'Welcome to DC - Domain Maintenance'
     )
     Clear-Host
     Write-Host "================ $Title ================" -ForegroundColor Cyan

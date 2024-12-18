@@ -47,7 +47,7 @@ function Get-UserFilePathChoice {
             $currentDate = Get-Date -Format "yyyy-MM-dd"
 
             # Define the folder path with the current date appended
-            $global:saveFolderPath = "C:/Elpc - Win Domain Maintenance_$currentDate"
+            $global:saveFolderPath = "C:/DC - Win Domain Maintenance_$currentDate"
 
             # Check if the directory exists, if not create it
             if (-not (Test-Path -Path $global:saveFolderPath)) {
@@ -68,7 +68,7 @@ function Write-Log {
     )
     if ($global:saveResults) {
         # Ensure the log file is saved inside the specified folder
-        $LogFile = Join-Path -Path $global:saveFolderPath -ChildPath "Elpc - Win Domain MaintenanceADManagementLog.txt"
+        $LogFile = Join-Path -Path $global:saveFolderPath -ChildPath "DC - Win Domain MaintenanceADManagementLog.txt"
         $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
         $logMessage = "$timestamp - $Message"
         Add-Content -Path $LogFile -Value $logMessage
